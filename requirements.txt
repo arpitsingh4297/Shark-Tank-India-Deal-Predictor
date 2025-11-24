@@ -1,10 +1,9 @@
 streamlit
 pandas
-numpy
-scikit-learn
-xgboost
+numpy==1.26.4          # ← Pins to pre-2.0 (fixes SHAP error)
 joblib
-matplotlib
-shap==0.42.1          
-lightgbm
+xgboost
+scikit-learn
 imbalanced-learn
+shap==0.50.0           # ← Your current version (works with NumPy 1.26.4)
+matplotlib
